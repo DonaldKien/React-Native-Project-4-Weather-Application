@@ -28,12 +28,15 @@ export default function weeklyWeather ({navigation}) {
                     <View><Text style={styles.btnText}>Search City</Text></View>
                 </TouchableOpacity> 
             </View>
+            <View style={styles.boxSized}>
                 <FlatList
                 data={weatherData} 
                 keyExtractor={ item => item["dt"] } 
                 renderItem={ ({item}) => (<ListItem data={item} pressDetail={openDetail}/>) }
                 />
+                </View>
         </SafeAreaView>
+
         </ImageBackground>
     )
 }
@@ -59,5 +62,8 @@ const styles = StyleSheet.create ({
     btnText: {
         color: 'white',
         textAlign: 'center'
+    },
+    boxSized: {
+        paddingBottom: 250
     }
 })

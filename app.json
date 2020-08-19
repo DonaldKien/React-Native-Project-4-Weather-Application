@@ -9,9 +9,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/weather2.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/weather2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,6 +21,9 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "com.dwhk.WeatherApp"
+    },
     "ios": {
       "supportsTablet": true
     }

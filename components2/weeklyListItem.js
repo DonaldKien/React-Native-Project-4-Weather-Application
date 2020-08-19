@@ -7,7 +7,6 @@ export default function WeeklyListItem (props) {
     const weeklyData = props.data
 
     return (
- 
         <TouchableOpacity onPress={ () => props.pressDetail(weeklyData) }>
             <View style={styles.container}>
                 <View style={styles.icon}>
@@ -20,7 +19,6 @@ export default function WeeklyListItem (props) {
                 </View>
             </View>
         </TouchableOpacity>
-
     )
 
 }
@@ -38,5 +36,5 @@ const styles = StyleSheet.create({
     list: {
         justifyContent:'center',
         flex: 4
-    }
+    },
 })
